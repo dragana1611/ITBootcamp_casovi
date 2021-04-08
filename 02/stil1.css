@@ -1,0 +1,28 @@
+body {
+    background-color: lemonchiffon;
+}
+h2 {
+    text-align-last: center;
+    color:blue;
+}
+.dva_p {
+    color:navy;
+    font-size: 16pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img {
+    border: 5px double red;
+}
+
+
+#drugi_p {
+    color: blueviolet;
+
+}
+#drugi_p a:hover {
+    color: green;
+    
+}
+#drugi_p a  {
+    color:red;
+}
