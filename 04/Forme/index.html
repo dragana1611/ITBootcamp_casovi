@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+<body>
+    <form action="">
+      <fieldset>
+          <legend>Osnovni podaci</legend>
+
+          <p>
+              <label >Ime i prezime</label>
+              <input type="text"></p>
+
+
+          <p>
+                  <label >Korisnicko ime</label>
+                  <input type="text" maxlength="20">
+          </p>
+          <p>
+            <label >Lozinka</label>
+                  <input type="password" maxlength="20">  
+          </p>
+          <p>
+            <label >Godine</label>
+            <input type="number" min="18" max="20" step="1"> 
+          </p>
+          <p>
+            <label >Pol</label>
+            <input type="radio" name="pol" value="n" checked> Neopredeljen
+            <input type="radio" name="pol" value="z"> Zenski
+            <input type="radio" name="pol" value="m"> Muski
+
+          </p>
+          <p>
+            <label >Datum rodjenja</label>
+            <input type="date" max="2003-04-09" >   <!--step="7"-->
+          </p>
+          <p>
+            <label >Vreme rodjenja</label>
+            <input type="time" >   
+          </p>
+          <p>
+            <label >Drzava</label>
+            <input type="text"value="Srbija">   
+          </p>
+          <p>
+            <label >Drzava stanovanja</label>
+            <input type="text"value="Srbija" disabled> 
+          </p>
+          <p>
+            <label >Drzavljanstvo</label>
+            <input type="text" placeholder="Unesite drzavljanstvo">
+          </p>
+
+    
+      </fieldset>
+      <fieldset>
+        
+          <legend>Dodatne informacije</legend>
+        <p>
+          <label >Da li zelite da primate poruke od nas?</label>
+          <input type="radio" name="poruke" value="da" checked>Da
+          <input type="radio" name="poruke" value="ne" >Ne
+        </p>
+        <p>
+          <label for="">Znanje programskih jezika:</label>
+          <input type="checkbox" name="jezik" value="js">JS
+          <input type="checkbox" name="jezik" value="php">PHP
+          <input type="checkbox" name="jezik" value="python">Python
+        </p>
+        <p>
+          <label for="">CV</label>
+          <input type="file" >
+        </p>
+        <p>
+          <label for="">Zasto ste se odlucili za nasu kompaniju</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+        <label for="">Odaberite kurs</label>
+        <select name="" id="">
+          <optgroup label="Nis">
+            <option value="php">PHP</option>
+            <option value="js">JS</option>
+            <option value="qa">QA</option>
+          </optgroup>
+          <optgroup label="Nis">
+            <option value="java">Java</option>
+            <option value="C">C</option>
+            
+          </optgroup>
+
+        </select>
+      </fieldset>
+      <input type="reset" value="Resetuj">
+      <input type="submit" value="Posalji">
+      <button>Proveri</button>
+    </form>
+    
+    
+</body>
+</html>

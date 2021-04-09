@@ -1,0 +1,21 @@
+table, th, td {
+    border:1px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+.zuto {
+    background-color: yellow;
+}
+
+
+table th:nth-child(3){
+    background-color: yellow;
+}
+table td:nth-child(3){
+    background-color: yellow;
+}
+th {
+    text-align-last: left;
+
+}
