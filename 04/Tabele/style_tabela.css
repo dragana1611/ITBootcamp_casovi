@@ -9,10 +9,10 @@ table{
 }
 
 
-table th:nth-child(3){
+table.druga th:nth-child(3){
     background-color: yellow;
 }
-table td:nth-child(3){
+table.druga td:nth-child(3){
     background-color: yellow;
 }
 th {
