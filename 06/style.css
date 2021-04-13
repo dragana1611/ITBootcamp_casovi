@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#div1{
+    background-color: brown;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 40px;
+    left: 25%;
+    z-index: 1;
+
+}
+.news{
+    background-color: cadetblue;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    left:40px;
+  
+}
+.news img{
+    width: 40%;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+
+}
+.news h5{
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: coral;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+

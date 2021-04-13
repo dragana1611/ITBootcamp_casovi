@@ -1,0 +1,15 @@
+#float{
+    background-color: red;
+    /*height: 200px;*/
+    overflow: hidden;
+
+}
+#float p{
+    background-color: rgb(163, 162, 162);
+    float: right;
+    width: 250px;
+    margin: 20px;
+}
+#float p:first-child{
+    float: left;
+}

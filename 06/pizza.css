@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:transparent ;
+    background-image: url("lego_pizza02.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    
+}
+/*div{
+    background-color: transparent;
+    width:500px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    font-size: 250%;
+     color: white;
+    
+}*/
+/*div{
+    background-color: transparent;
+    width:500px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+    font-size: 250%;
+     color: white;
+}*/
+/*div{
+    background-color: transparent;
+    width:500px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    right:10px;
+    font-size: 250%;
+     color: white;
+}*/
+/*div{
+    background-color: transparent;
+    width:500px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    font-size: 250%;
+     color: white;
+}*/
+div{
+    background-color: transparent;
+    width:500px;
+    height: 400px;
+    margin:auto;
+    font-size: 250%;
+    line-height: 400px;
+    text-align: center;
+    color: white;
+}
