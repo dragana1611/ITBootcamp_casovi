@@ -1,90 +1,93 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-nav{
+
+nav {
     position: fixed;
     top: 0;
     width: 100%;
 }
-nav ul{
+
+nav ul {
     overflow: hidden;
     list-style-type: none;
-    
 }
-nav ul li{
-    float:left;
+
+nav ul li {
+    float: left;
     width: 25%;
     border: 2px solid white;
     background-color: chocolate;
     text-align: center;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     display: block;
     padding: 10px 0;
 }
-nav ul li a:hover{
-    background: red;
+
+nav ul li a:hover {
+    background-color: crimson;
 }
-.submenu{
+
+.submenu {
     position: absolute;
-    background: chocolate;
+    background-color: chocolate;
     width: 25%;
     display: none;
 }
-.dropdown:hover .submenu{
+
+.dropdown:hover .submenu {
     display: block;
 }
-/*#rest{
-    position: absolute; /*  moze u body tagu padding-top 40px */
- /*   top: 40px;
-}*/
-body{
+
+body {
     padding-top: 40px;
 }
-section{
+
+section {
     width: 400px;
     height: 200px;
-    background: chocolate;
+    background-color: coral;
     margin: 10px;
 }
-section:nth-of-type(1){
-    display:none
+
+/* display, visibility
+display: none;
+visibility: hidden;
+*/
+
+section:nth-of-type(1) {
+    display: none;
 }
-section:nth-of-type(2){
+
+section:nth-of-type(2) {
     visibility: hidden;
 }
-footer{
+
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-footer ul{
+
+footer ul {
     background-color: chocolate;
     width: 25%;
     list-style-type: none;
-    margin-left: 10px;
-    padding: 3px;
 }
-footer ul li a{
+
+footer ul li a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: white;
 }
-footer ul li a:hover{
-    background: darkgoldenrod;
-}
-footer ul  ul{
-    
-    list-style-type: none;
- 
-}
-footer ul ul li{
-    color: blue;
 
-
+footer ul li a:hover {
+    background-color: darkgoldenrod;
 }

@@ -1,0 +1,43 @@
+header{
+    background-color: aqua;
+    text-align: center;
+    padding: 15px 0;
+}
+/* navigacija  */
+nav ul {
+    list-style-type: none;
+    background-color: darkturquoise;
+}
+nav ul li{
+    padding: 10px;
+    border-bottom:1px solid aqua
+}
+nav ul li:hover{
+    background-color: aqua;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+/* aside */
+aside{
+    background-image:linear-gradient(darkturquoise, white) ;
+}
+/* slike img */
+section img{
+    width:100%;
+}
+/* footer */
+footer{
+    background-color: aqua;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+}
+.gradient{
+    background-image: linear-gradient(darkturquoise, white) ;
+    margin-bottom: 50px;
+}

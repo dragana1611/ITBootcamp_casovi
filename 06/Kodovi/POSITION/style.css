@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-image: url("https://i.ytimg.com/vi/Y_fXmZt1j4k/maxresdefault.jpg");
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 10%;
+}
+
+#div1 {
+    background-color: brown;
+    width: 400px;
+    height: 200px;
+    position: relative; /* relativno - u odnosu na poziciju koju inace ima */
+    top: 40px;
+    left: 25%;
+    z-index: 1;
+}
+
+.news {
+    background-color: cadetblue;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    left: 40px;
+}
+
+.news img {
+    width: 40%;
+    position: absolute; /* absolute - u odnosu na prvog pretka koji ima podesenu neku poziciju */
+    top: 40px;
+    left: 20px;
+}
+
+.news h5 {
+    position: absolute;
+    top: 40px;
+    right: 5px;
+}
+
+footer {
+    background-color: coral;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
