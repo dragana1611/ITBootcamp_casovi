@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    width: 100%;
+    /*Da nam se redovi ne bi preklapali*/
+    overflow: hidden;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+/* Mobilni uređaji */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    nav ul li{
+      width: 100%;
+      border-top: 1px solid silver;
+      padding: 10px;
+    }
+}
+
+/* Desktop i tablet uređaji */
+@media only screen and (min-width: 1000px) {
+    .col-1 {
+      width: 8.33%;
+    }
+    .col-2 {
+      width: 16.66%;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.33%;
+    }
+    .col-5 {
+      width: 41.66%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-7 {
+      width: 58.33%;
+    }
+    .col-8 {
+      width: 66.66%;
+    }
+    .col-9 {
+      width: 75%;
+    }
+    .col-10 {
+      width: 83.33%;
+    }
+    .col-11 {
+      width: 91.66%;
+    }
+    .col-12 {
+      width: 100%;
+    }
+}
+
+/* Header */
+header{
+  color: #0275D8;
+  text-align: center;
+  height: 50px;
+  padding-top: 7px;
+}
+
+/* Navigacija */
+nav {
+  height: 50px;
+  background-color: #0275D8;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li{
+  float: left;
+  font-size: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  background-color: #0275D8;
+  color: white;
+}
+
+nav .logo {
+  height: 30px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* Ispod menija */
+h2 {
+  margin: 10px 0px 10px 10px;
+}
+
+.letoviDestinacije img, .informacijeKontakt img {
+  width: 300px;
+}
+
+.letoviDestinacije div, .informacijeKontakt div{
+  margin: 20px;
+}
+
+
+/* Lista destinacija */
+ul.destinacije {
+  list-style-type: none;
+}
+
+ul.destinacije li {
+  padding: 10px;
+  margin: 5px 0px;
+  background-color: rgb(238, 233, 233);
+  border-radius: 5px;
+}
+
+ul.destinacije li:hover {
+  background-color: #0275D8;
+  color: white;
+}
+
+/* Kontakt */
+
+.kontaktForma input, .kontaktForma textarea {
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: silver 1px solid;
+}
+
+.kontaktForma #email, .kontaktForma textarea {
+  width: 100%;
+}
+
+#posalji {
+  background-color: #0275D8;
+  color: white;
+  padding: 10px
+}

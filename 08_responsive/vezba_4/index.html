@@ -4,11 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Air SERBIA</title>
+    <link rel="stylesheet" href="stil.css">
+
+    <!-- Link za importovanje ikonica -->
+    <script src="ikonice.js" data-auto-replace-svg="nest"></script>
 </head>
 <body>
+    <div class="row">
+        <header class="col-12 col-t-12">
+            <h1> Air SERBIA </h1>
+        </header>
+    </div>
+
+    <div class="row sticky">
+        <nav>
+            <ul>
+                <li><img src="slike/airserbia.png" alt="logo" class="logo" ></li>
+                <li>Letovi</li>
+                <li>Destinacije</li>
+                <li>Informacije</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="row letoviDestinacije">
+        <div class="col-4">
+            <h2>Letovi</h2>
+            <img src="slike/letovi.jpg" alt="Letovi">
+        </div>
+        <div class="col-6">
+            <h2>Destinacije</h2>
+            <img src="slike/destinacije.jpg" alt="Destinacije">
+
+            <ul class="destinacije">
+                <li>Evropa</li>
+                <li>Azija</li>
+                <li>Afrika</li>
+                <li>Amerika</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row informacijeKontakt">
+        <div class="col-4">
+            <h2>Informacije</h2>
+            <img src="slike/informacije.jpg" alt="Informacije">
+        </div>
+        <div class="col-6">
+            <h2>Kontakt</h2>
+            <form action="" class="kontaktForma">
+                <p>
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="Unesite email" id="email">
+                </p>
+                
+                <p>
+                    <label>Tekst poruke:</label><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="putovanje" id="" value="da">
+                    <label for="">prihvatite uslove korišćenja</label>
+                </p>
+
+                <p>
+                    <input type="submit" value="Pošaljite" id="posalji">
+                </p>
+
+            </form>
+        </div>
+    </div>   
     
 </body>
 </html>
