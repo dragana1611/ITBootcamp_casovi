@@ -157,3 +157,7 @@ ul.destinacije li:hover {
   color: white;
   padding: 10px
 }
+.informacijeKontakt img{
+  position:relative;
+  left: 40px;
+}
