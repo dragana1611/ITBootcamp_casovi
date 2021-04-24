@@ -32,7 +32,8 @@ document.body.innerHTML +=
     Godina je ${v} :)
 </p>`;    
 let slika = "rose.png";
-document.body.innerHTML += `< img src="${slika}">`;
+document.body.innerHTML += `<img src="${slika}">`;
+
 
 
 
@@ -177,6 +178,58 @@ else{
 }
 
 
+//10.
+let dat1=datum.getDate();
+console.log(dat1);
 
 
+//12.
 
+let D1_1=9;
+let D1_2=17;
+let D2_1=13;
+let D2_2=20;
+
+if(D2_1>=D1_1 && D2_1 <= D1_2){
+    document.body.innerHTML += `<h1>DA</h1>`;
+}
+else{
+    document.body.innerHTML += `<h1>NE</h1>`;
+}
+
+//13.
+
+let x=789;
+if(x%2==0){
+    console.log(`Broj ${x} je paran`); 
+}
+else{
+    console.log(`Broj ${x} je neparan`);
+}
+
+//14.
+
+let y=789;
+if(x%3==0){
+    console.log(`Broj ${y} je deljiv sa 3`); 
+}
+else{
+    console.log(`Broj ${y} je deljiv sa 3`);
+}
+
+//15.
+
+let s = 98;
+let g = 23;
+let max_b = s;
+
+
+if(g>max_b){
+    max_b = g;
+    max_b - s;
+    document.body.innerHTML += `<p>Razlika brojeva je ${max_b} - ${s} = ${max_b - s}</p>`;
+}
+else{
+    max_b - g;
+    document.body.innerHTML += `<p>Razlika brojeva je ${max_b} - ${g} = ${max_b - g}</p>`;
+}
