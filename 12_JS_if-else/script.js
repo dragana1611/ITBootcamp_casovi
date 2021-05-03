@@ -28,7 +28,7 @@ else if (god2<god1){
     console.log("datum 2 je raniji");
 }
 //posto su godine iste proverano za mesece
-else if(mes1<mes1){
+else if(mes1<mes2){
     console.log("datum 1 je raniji");
 }
 else if ( mes2<mes1){
@@ -137,10 +137,12 @@ else {
 //deljivost
 let broj1 = 5;
 let broj2 = 3;
-if(broj1%broj2==0){
+if(broj1 % broj2 == 0){
     console.log(`${broj1} je deljiv brojem ${broj2}`);
 }
-    console.log(`${broj1} je nije deljiv brojem ${broj2}`)
+else{
+    console.log(`${broj1} nije nije deljiv brojem ${broj2}`);
+}
 
 //13
 let br = 67;
@@ -181,12 +183,12 @@ else{
 let br1 = 45;
 if(br1<=0){
     console.log(`Broj ${br1} je manji od 0`);
-    br1=br1-1;
+    br1=br1-1;  // br--;
     console.log(`Prethodnik broja ${br1} je broj ${br1-1}`);
 }
 else if (br1 > 0) {
     console.log(`Broj ${br1} je veci od 0`);
-    br1=br1+1;
+    br1=br1+1;  // br++;
     console.log(`Sledbenik broja ${br1} je broj ${br1+1}`);
 }
 else{
@@ -216,20 +218,23 @@ if(treci > max){
 }
 console.log(`Najveci broj je ${max}`);
 // srednji broj
-let srednji = ((prvi + drugi + treci)-(min + max));
+let srednji = (prvi + drugi + treci)-(min + max);
 console.log(`Srednji broj je ${srednji}`);
 
 
 
 
 //18
-let a = 7.00;
-let ceo = a % 1;
+let a = -7.56;
+let ceo =(a % 1);
+
 if ( ceo == 0 ) {
     console.log(`${a} je ceo broj`);
+   
 }
 else {
     console.log(`${a} nije ceo broj.`);
+     
 }
 
 //20
@@ -296,7 +301,6 @@ console.log(`tacno vreme je ${sati}:${minut}:${sek}`);
 let j=98;
 let k = -11;
 let l = 22;
-//let maxi;
 
 if(j >= k && j >= l)
         maxi = j;
@@ -305,4 +309,76 @@ if(j >= k && j >= l)
     else
         maxi = l;
         console.log(maxi);
-    
+
+//max 3 broja 
+let o=23;
+let p=12;
+let q=-3;
+
+
+if(o >= p && o >= q){
+        max = o;
+}
+else if(p >= o && p >= q){
+        max = p;
+}
+else{
+        max = q;
+}
+    console.log(`najveci broj je ${max}`);
+
+
+
+//Prestupna godina
+let dat = new Date();
+god =dat.getFullYear();
+console.log(god);
+
+if((god%400==0) || (god%4==0 && god%100!=0)){
+    console.log(`Godina ${god} je prestupna`);
+}
+else {
+    console.log(`Godina ${god} nije prestupna`);
+}
+
+
+
+//Ekstremna T
+let T=40;
+
+if((T<(-15)) || (T>40)){
+    console.log(`extremna temepratura!!!!`);
+}
+else{
+    console.log("normalna temperatura");
+}
+
+//Radno vreme butika
+let h = dat.getHours();
+let dan = dat.getDay();
+console.log(h);
+console.log(dan);
+let rdanP = 9;
+let rdanK = 20;
+let vikP = 10;
+let vikK = 18;
+
+if(dan != 6 && dan !=0){
+    console.log("radni je dan");
+    if(h<9 || h>20){
+        console.log("Butik je zatvoren");
+    }
+    else{
+        console.log("Butik je otvoren");
+    }
+}
+else{
+    console.log("vikend je");
+    if(h<10 || h>18){
+        console.log("Butik je zatvoren");
+    }
+    else{
+        console.log("Butik je otvoren");
+    }
+}
+

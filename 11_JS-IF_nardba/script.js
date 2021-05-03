@@ -151,7 +151,7 @@ console.log(vreme);
 if(vreme>24 || vreme<12){
     console.log('dobro jutro');
 }
-else if(vreme==12 || vreme<=18){
+else if(vreme>=12 || vreme<=18){
     console.log("dobar dan");
 }
 else{
@@ -210,7 +210,7 @@ else{
 //14.
 
 let y=789;
-if(x%3==0){
+if(y%3==0){
     console.log(`Broj ${y} je deljiv sa 3`); 
 }
 else{

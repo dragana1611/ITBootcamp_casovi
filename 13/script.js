@@ -81,19 +81,6 @@ else{
 }
 
 
-
-let p1=11;
-let k1=16;
-let p2=17;
-let k2=21;
-if(k1>p2 && k2>p1){
-    console.log("smene lekara se preklapaju");
-}
-else {
-    console.log("smene lekara se ne preklapaju");
-}
-
-
 let h = dat.getHours();
 let dan = dat.getDay();
 console.log(h);
