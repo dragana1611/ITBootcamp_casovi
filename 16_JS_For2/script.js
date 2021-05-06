@@ -42,7 +42,8 @@ for(i = n; i <= m;  i++){
     }
     console.log(`Ima ukupno ${brJ4} brojeva kojima je poslednja cifra 4 i njihova suma je ${suma} `);
 
-//16.
+//16. Odrediti sumu brojeva od n do m koji nisu deljivi brojem a
+
 n=10;
 m=30;
 let a=5;
@@ -54,7 +55,8 @@ for(i = n; i <= m;  i++){
 }
 console.log(`suma brojeva koji nisu deljivi brojem ${a} je: ${sum}`);
 
-//17.
+//17. Odrediti proizvod brojeva od n do m koji su deljivi brojem a *
+
 n=10;
 m=25;
 a=5;
@@ -66,7 +68,10 @@ for(i = n; i <= m;  i++){
 }
 console.log(`proizvod brojeva koji su deljivi brojem ${a} je: ${proizv}`);
 
-//18. I nacin
+/*//18. Napraviti tabelu sa 6 redova.Svaki red tabele treba da ima po dve ćelije (dve kolone).Svakom parnom redu dodati klasu „obojen“.Korišćenjem CSS-a, klasi obojen postaviti proizvoljnu boju pozadine. 
+*/
+
+//I nacin
 let redovi = 6;
 let tabela = `<table>`;
 for(i=1; i<=redovi; i++){
@@ -84,12 +89,14 @@ for(i=1; i<=redovi; i++){
     `;
     
 }
-tabela  += `<table>`;
+tabela  += `</table>`;
 document.body.innerHTML += tabela;
 
 //////////////////////////////////////
-let element = document.getElementById("naslov");
-element.innerHTML +=/* = "*******" + element.innerHTML    - zvezdice pre teksta naslova */ "*****";
+
+
+let h1 = document.getElementById("naslov");
+h1.innerHTML +=/* = "*******" + element.innerHTML    - zvezdice pre teksta naslova */ "*****";
 
 //18. II nacin
 let htmlTabela = document.getElementById("mojaTabela");

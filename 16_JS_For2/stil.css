@@ -1,12 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 table{
     border-collapse: collapse;
+    margin: 20px;
 }
 td{
     border: 1px solid black;
+    width: 50px;
+    height: 20px;
+    text-align: center;
    
 }
 .obojen{
@@ -14,6 +19,11 @@ td{
 }
 .obojen2{
     background-color: grey;
+}
+p{
+    margin: 10px;
+    text-align: justify;
+    text-indent: 20px;
 }
 .ljubicasti{
     color: purple;
@@ -26,4 +36,11 @@ td{
     text-align: center;
     margin-bottom: 5px;
     line-height: 50px;
+}
+ul{
+    margin: 30px;
+}
+ul ul{
+    margin-top: 0;
+    margin-bottom: 0;
 }

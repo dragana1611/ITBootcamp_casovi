@@ -30,25 +30,24 @@ while(br3<=20){
     if(br3 % 2 == 0){
     console.log(br3);
     }
-    
     br3++;
 }
 
-//Kreirati n paragrafa sa proizvoljnim tekstom i naizmenično ih obojiti u tri različite boje
+//4. Kreirati n paragrafa sa proizvoljnim tekstom i naizmenično ih obojiti u tri različite boje
 
 let n=1;
 
 while (n<=12){
-   if(n%2==1 && n%3==1){
+   if(n%3==0){
         document.body.innerHTML += `<p style="color:red">VEZBA</p>`;
     
    }
     
-    if (n%2==0 && n%3==2){
+    else if (n%3==1){
         document.body.innerHTML += `<p style="color:blue">VEZBA</p>`;
      
     }
-    if (n%3==0 && n%2==1){
+    else if (n%3==2){
         document.body.innerHTML += `<p style="color:green">VEZBA</p>`;
      
     }
@@ -66,7 +65,7 @@ while (n<=6){
     if(n%2==1){
         document.body.innerHTML += `<img  src="${slika_m}" style="border: 5px dashed black; height:100px"><br>`; 
     }
-    if(n%2==0){
+    else{
         document.body.innerHTML += `<img  src="${slika_z}" style="border: 7px double darkblue; height:100px"><br>`;
     }
     n++;
@@ -114,11 +113,10 @@ let s=0;
 while(i<=100){
     s=s+i;
     i++;
-    
 }
 console.log(`suma svih brojeva do 100 je:${s}`);
 
-//4.
+//4. Kreirati n paragrafa sa proizvoljnim tekstom i naizmenično ih obojiti u tri različite boje
 
 document.body.innerHTML += `<h1>While petlja</h1>`;
 i=1;
@@ -140,7 +138,7 @@ while(i <= n){
 //Odrediti sumu brojeva od 1-5
 i=1;
 suma = 0;
-n=5
+n=5;
 while (i<= n){
     suma +=i;
     i++;
@@ -164,7 +162,8 @@ while(i<=n){
 }
 console.log(proizvod);
 
-//12
+//12  Odrediti da li je dati prirodan broj n prost. Broj je prost ako je deljiv samo sa jedan i sa samim sobom.
+
 i=1;
 let k=100;  // 1,2,5,10
 let brDeljivih = 0;
@@ -172,7 +171,7 @@ let brDeljivih = 0;
 while (i<=k){
     if (k%i==0){
         brDeljivih++;
-}
+    }
     i++;
 }
 console.log(brDeljivih);
