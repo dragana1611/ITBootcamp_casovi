@@ -217,7 +217,7 @@ deljivSaTri(1,20);
 
 //7. zadatak
 function sedmiDan(n){
-    let dan=n;
+    let dan=n%7;
     switch(dan){
         case 1:
             console.log(`PONEDELJAK`);
@@ -244,7 +244,7 @@ function sedmiDan(n){
             break;
      
         case 0:
-        case 7:
+        
             console.log(`NEDELJA`);
             break;
        
@@ -282,3 +282,50 @@ function mnozi(n,m){
 }
 mnozi(2,10);
 console.log(mnozi(2,10));
+
+//11.
+
+function arSr(n,m){
+   suma=0;
+   brojac=0;
+  let arSr;
+    for(i=n; i<=m; i++){
+       suma += i;
+       brojac++;
+     }
+    return arSr=suma/brojac;
+}
+arSr(2,10);
+console.log(arSr(2,10));
+
+//12
+function arSrCif(n,m){
+    let brojac=0;
+    let suma=0;
+    
+    for(i=n;i<=m;i++){
+    let cifra= i%10;
+    if(cifra==3){
+        suma +=i;
+        brojac++;
+    }
+}
+     return suma/brojac;
+}
+arSrCif(2,10);
+console.log(arSrCif(2,10));
+
+//13.
+function velFont(n){
+    document.body.innerHTML += `<p style="font-size: ${n}pt" > Font-size se zadaje funkcijom </p>`;
+
+}
+velFont(26);
+
+//14.
+function petReci(i){
+    for(i=1; i<=5; i++){
+    document.body.innerHTML += `<p style="font-size: ${i}em" > Font-size se zadaje funkcijom </p>`;
+    }
+}
+petReci(5);
