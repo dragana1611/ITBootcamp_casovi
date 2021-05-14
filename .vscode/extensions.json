@@ -1,5 +1,8 @@
 {
     "recommendations": [
-        "pkief.material-icon-theme"
+        "pkief.material-icon-theme",
+        "hwencc.html-tag-wrapper",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag"
     ]
 }

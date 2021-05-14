@@ -1,0 +1,10 @@
+table{
+    border-collapse: colapse;
+    margin: 40px;
+}
+td{
+    border: 2px solid black;
+}
+img{
+    height: 100px;
+}
