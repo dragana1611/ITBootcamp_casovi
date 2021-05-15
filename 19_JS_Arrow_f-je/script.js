@@ -163,3 +163,4 @@ else{
 }
 polazak(15,10,12);
 console.log(`Takmicar treba da krene ${polazak(15,10,12)} [sec] nakon početka merenja vremena `);
+
