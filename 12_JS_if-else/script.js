@@ -181,7 +181,7 @@ else{
 //16
 
 let br1 = 45;
-if(br1<=0){
+if(br1<0){
     console.log(`Broj ${br1} je manji od 0`);
     br1=br1-1;  // br--;
     console.log(`Prethodnik broja ${br1} je broj ${br1-1}`);

@@ -71,13 +71,13 @@ let datum = new Date();
 let trenutnoSati = datum.getHours();
 console.log(trenutnoSati);
 
-if (trenutnoSati<12 || trenutnoSati>24){
+if (trenutnoSati<12 && trenutnoSati>0){
     console.log("jutro je");
 }
-    if(trenutnoSati>=12 || trenutnoSati<=18){
+else if(trenutnoSati>=12 && trenutnoSati<=18){
     console.log("popodne je");
 }
-if(trenutnoSati>18 || trenutnoSati<=24){
+else if(trenutnoSati>18 && trenutnoSati<=24){
     console.log("vece je");
 }
 
@@ -148,10 +148,10 @@ else {
 //9.
 let vreme = datum.getHours();
 console.log(vreme);
-if(vreme>24 || vreme<12){
+if(vreme>0 && vreme<12){
     console.log('dobro jutro');
 }
-else if(vreme>=12 || vreme<=18){
+else if(vreme>=12 && vreme<=18){
     console.log("dobar dan");
 }
 else{
@@ -170,7 +170,7 @@ else{
 }
 
 trenutnoSati = datum.getHours();
-if(trenutnoSati<9 || trenutnoSati>=17){
+if(trenutnoSati<9 && trenutnoSati>=17){
     console.log("Firma ne radi");
 }
 else{
