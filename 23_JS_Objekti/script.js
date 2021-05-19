@@ -41,7 +41,7 @@ function slikeNiz(niz) {
     slike.forEach(elem=>{
         document.body.innerHTML += `<br>`;
         document.body.innerHTML += `<img src="${elem}" style="height:100px;">`;
-    })
+    });
 }
 slikeNiz(slike);
 
@@ -49,6 +49,7 @@ slikeNiz(slike);
 //MAX-duzina/Min-duzina - Odrediti element u nizu stringova sa najvećom dužinom i min duzinom.
 
 let imena = ['stefan', 'nikola', 'milijana', 'ana', 'nenad', 'vuk','vladimir'];
+
 let maxDuzinaNiza = niz=>{
     let maxDuzina = niz[0].length;
     niz.forEach(elem=>{
@@ -59,6 +60,7 @@ let maxDuzinaNiza = niz=>{
     return maxDuzina;
 }
 console.log(maxDuzinaNiza(imena));
+
 let ispisStringMaxDuzine = niz =>{
     let md = maxDuzinaNiza(niz);
     niz.forEach(elem=>{
@@ -68,6 +70,7 @@ let ispisStringMaxDuzine = niz =>{
     });
 }
 ispisStringMaxDuzine(imena);
+
 let minDuzinaNiza = niz=>{
     let minDuzina = niz[0].length;
     niz.forEach(elem=>{
@@ -84,8 +87,9 @@ let ispsisStringMinDuzina = niz=>{
         if(elem.length==md){
             console.log(elem);
         }
-    })
+    });
 }
+
 let ispisStringSvojstvo = (niz, svojstvo) => {
     let md = svojstvo(niz);
     niz.forEach(elem => {
