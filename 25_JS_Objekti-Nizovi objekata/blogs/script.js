@@ -83,17 +83,6 @@ console.log(prosekLajkova(blogsArr));
 Napraviti arrow funkciju kojoj se prosleđuje niz objekata, a ona ispisuje sve one naslove blogova koji imaju najmanje duplo više pozitivnih nego negativnih ocena
  */
 
-/*let dislikes = nizObj=>{
-    
-    let sumaDislikes=0;
-    nizObj.forEach(elem=>{
-        sumaDislikes += elem.dislikes;
-        
-    });
-    return sumaDislikes;
-}
-console.log(dislikes(blogsArr));
-*/
 
 let viseLikes = nizObj =>{
     let lista = "<ul>";

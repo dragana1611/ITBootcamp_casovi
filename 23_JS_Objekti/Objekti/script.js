@@ -110,6 +110,7 @@ let dan = {
             }
         });
         return max;
+    },
          /**
         maksimalna: function(){
             let maks=this.Temperature[0];
@@ -120,9 +121,9 @@ let dan = {
             }
             return maks;
         }
-         */
-    },
-   /* brojMax:function(){
+         
+    },*/
+   /*brojMax:function(){
         let maks=this.maxTemp();
         let brMax=0;
         this.Temperature.forEach(elem=>{
@@ -131,9 +132,12 @@ let dan = {
             }
         });
         return brMaks;
-    },*/
-    //4.Prima dva parametra koji predstavljaju dve temperature. Potrebno je da metoda vrati broj merenja u toku dana čija je vrednost između ove dve zadate temperature (ne uključujući te dve vrednosti).
-    intervalMerenja:function(temp1,temp2){ 
+    //},*/
+    
+    
+    /*//4.Prima dva parametra koji predstavljaju dve temperature. Potrebno je da metoda vrati broj merenja u toku dana čija je vrednost između ove dve zadate temperature (ne uključujući te dve vrednosti).*/
+    
+        intervalMerenja:function(temp1,temp2){ 
         //ukoliko je temp1>temp2
         if(temp1>temp2){
             let tmp=temp1;
@@ -177,8 +181,8 @@ let dan = {
 
        //3.nacin
       /* let leden = true;
-        for (let i = 0; i < i < this.Temperature.length; i++) {
-            if(this.Temperature[i>=0]){
+        for (let i = 0; i < this.Temperature.length; i++) {
+            if(this.Temperature[i]>=0){
                 leden=false;
                 break;
             }
@@ -191,6 +195,7 @@ tropskiDan:function(){
     for (let i = 0; i < this.Temperature.length; i++) {
         if (this.Temperature[i] < 24) {
                 tropski = false;
+            break;
                 
         }
     }
