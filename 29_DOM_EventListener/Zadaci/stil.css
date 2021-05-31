@@ -1,0 +1,14 @@
+form{
+    margin:40px 0 20px  20px;
+}
+
+#ispisiIme{
+    margin-left: 30px;
+}
+p{
+    margin-left: 20px;
+}
+#resKvadrBr, #resPolaBr, #resPovrsK {
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadaci</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <!-- 1.zadatak -->
+    <p>
+        <button id="brojac">Brojac</button>
+    </p>
+
+    <!-- 2. zadatak -->
+    <p>
+        <button id="brojac1"> Brojac 1 </button>
+        <p id="ispisBrojaca1"></p>
+    </p>
+    <!-- 3. i 4. zadatak -->
+    <!-- <form>
+            
+        <input type="button" onClick="plus()" Value="+" id="plus"/>
+        <p>
+            <span id="res" style="font-size: 150%; font-weight: bold"></span>
+        </p>
+        <input type="button" onClick="minus()" Value="-" id="minus"/>
+    
+    </form> -->
+    
+    <!-- 4. zadatak -->
+    <p>
+        <button id='minus'>-</button>
+        <span id="res" style="font-size: 120%; font-weight: bold"></span>
+        <button id='plus'>+</button>
+    </p>
+
+    <!-- 5. zadatak -->
+    <form id="forma1">
+        <label for="">Ime: </label><input type="text" id="ime" /><br><br>
+    
+        <input type="button"  Value="Ispisi ime" id="ispisiIme" /><br>
+    
+    </form>
+    <p>&nbsp;&nbsp;&nbsp;<span id="ispisi" style="font-size: 150%" "font-weight: bold"> </span>
+    
+
+        
+    <form id="forma2">
+        <label>Kvadriraj ovaj broj: </label>
+        <input type="text" id="kvadratBr">
+        <input type="button" value="Izracunaj" id="racKvadr"><br><br>
+
+        <label>Prepolovi ovaj broj: </label>
+        <input type="text" id="polaBr">
+        <input type="button" value="Izracunaj" id="racPolaBr"><br><br>
+
+        <label>Izracunati povrsinu kruga za zadati poluprecnik: </label>
+        <input type="text" id="povrsKrug">
+        <input type="button" value="Izracunaj" id="racPovrsK"><br><br>
+
+    </form>
+    <p>
+        Kvadrat broja: 
+        <span id="resKvadrBr"></span><br><br>
+        Polovina broja:
+        <span id="resPolaBr"></span><br><br>
+        Povrsina kruga:
+        <span id="resPovrsK"></span>
+    </p>
+    
+   <script src="script.js"></script>
+</body>
+</html>

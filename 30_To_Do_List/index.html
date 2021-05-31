@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Dogadjaji</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <button>Jednostruki klik</button>
+    <button id="dupli_klik">Dvostruki klik</button>
+    <button onclick="klikni()">Klik </button>
+    <button /*onclick="alert ('Hello!!!')" */>Ispis u konzoli
+    </button>
+    
+    <p>
+        <input type="text" id="ime" placeholder="Unesite ime">
+        <button id="posalji">Posalji</button>
+    </p>
+    <p id="prikaziIme"></p>
+    
+    <!-- 5. zadatak II nacin -->
+    <p>
+        <form id="forma1">
+            <input type="text" id="prezime" placeholder="Unesite prezime">
+            <button id="posaljiPrezime">Posalji</button>
+        </form>
+        <p id="prikaziPrezime"></p>
+    </p>
+
+    <!-- //7.zadatak -->
+
+    <form id="forma2">
+        <label>Kvadriraj ovaj broj: </label>
+        <input type="number" id="kvadratBr">
+        <input type="button" value="Izracunaj" id="racKvadr"><br><br>
+    
+        <label>Prepolovi ovaj broj: </label>
+        <input type="text" id="polaBr">
+        <input type="button" value="Izracunaj" id="racPolaBr"><br><br>
+    
+        <label>Izracunati povrsinu kruga za zadati poluprecnik: </label>
+        <input type="number" id="povrsKrug">
+        <input type="button" value="Izracunaj" id="racPovrsK"><br><br>
+    
+    </form>
+    <p>
+        Kvadrat broja: 
+        &nbsp;<span id="resKvadrBr"></span><br><br>
+        Polovina broja: 
+        &nbsp;<span id="resPolaBr"></span><br><br>
+        Povrsina kruga: 
+        &nbsp;<span id="resPovrsK"></span>
+    </p>
+    <script src="script.js"></script>
+</body>
+
+</html>

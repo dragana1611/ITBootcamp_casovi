@@ -336,3 +336,10 @@ for (let i = 0; i < sviParagrafi.length; i++) {
         sviParagrafi[i].classList.add('error');     
     }
 }
+
+// Dodati novi div tag dokumentu.
+// Formirati ul listu sa stavkama čiji je sadržaj proizvoljan tekst, i dodati je div elementu.
+// Iz ul liste izbaciti prvu stavku.
+// U ul listi zameniti drugu stavku liste.
+// Dodati još jednu stavku ul listi, pri čemu je sadržaj stavke slika
+
