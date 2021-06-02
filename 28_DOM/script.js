@@ -202,17 +202,19 @@ for (let i = 0; i < sveImgPng.length; i++) {
 //         sviLinkovi[i].target == "_blank";
 //     }
 // }
-/*linkovi = document.querySelectorAll('a'){
-    linkovi.forEach(linl=>{
-       if(link.target==="_blank"){
-           link.target="top";
-       }
-       else{
-           link.target="blank";
-       }
-    });
-}
-*/
+
+
+//linkovi = document.querySelectorAll('a');
+//    linkovi.forEach(link=>{
+//       if(link.target==="_blank"){
+//           link.target="top";
+//       }
+//       else{
+//           link.target="blank";
+//       }
+//    });
+
+
 
 /*//Napraviti niz od najmanje tri imena. Proći nizom i imena ispisati:
 Svako u novom linku.Ako ime počinje na slovo „S“, link se otvara u novom tabu, a inače se otvara na istoj stranici.
