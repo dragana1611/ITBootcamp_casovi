@@ -62,6 +62,7 @@ b1.addEventListener('click', ()=>{
             let sekundi = datum.getSeconds();
             //divIspis.innerHTML = " dodat tekst iz JS!!!";
             divIspis.innerHTML += `${sati}:${minuti}:${sekundi}`;
+            clock = null;
         }, 2000);   
     }
 });
@@ -73,3 +74,42 @@ b2.addEventListener('click', ()=>{
 
 
 //console.log(window);
+
+let clockInterval = null;
+
+
+// console.log("prva linija koda");
+// console.log("druga linija koda");
+// clockInterval = setInterval(() =>{
+//     console.log("poziv callback f-je")
+// }, 1000);
+// console.log("cetvrta linija koda");
+// console.log("peta linija koda");
+
+// setTimeout(() =>{
+//     clearInterval(clockInterval);
+// },5000);
+// console.log("sedma linija koda");
+// console.log("osma linija koda");
+
+let b3 = document.getElementById('b3');
+let b4 = document.getElementById('b4');
+let divIspis2 = document.getElementById('ispis2');
+let clockPeriod = null;
+
+b3.addEventListener('click', () =>{
+    if(clockPeriod === null){
+        clockPeriod = setInterval(() => {
+            let datum = new Date();
+            let sati = datum.getHours();
+            let minuti = datum.getMinutes();
+            let sekunde = datum.getSeconds();
+            divIspis2.innerHTML = `${sati} : ${minuti}: ${sekunde}`;
+        }, 1000/5);
+    }
+});
+
+b4.addEventListener('click', () =>{
+    clearInterval(clockPeriod);
+    clockPeriod = null;
+});
