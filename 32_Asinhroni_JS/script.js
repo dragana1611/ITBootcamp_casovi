@@ -24,7 +24,7 @@ request.addEventListener('readystatechange', ()=>{
         //console.log(odgovor);
         console.log(odgovorJS);// iterira se forEach petljom
     }
-})
+});
 
 request.open('GET', 'https://jsonplaceholder.typicode.com/posts/55');
 request.send();

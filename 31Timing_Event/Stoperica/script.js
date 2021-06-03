@@ -1,8 +1,8 @@
 let inpStart = document.getElementById('start');
 let inpPauza = document.getElementById('pauza');
 let inpIspis = document.getElementById('ispis');
-inpIspis.value = 1;
 let timer = null;
+inpIspis.value = 1;
 
 inpStart.addEventListener('click', () =>{
     if(timer === null){
