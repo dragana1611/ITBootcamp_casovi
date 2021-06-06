@@ -33,3 +33,10 @@ getTodos("../JSON/fruits.json").then(data => {
     console.log('promise rejected', err);
 });
 console.log("KRAJ!!!");
+
+// // 1. Kreiranje XML objekat
+// let request = new XMLHttpRequest();
+// // 2. Otvaranje kreiranog zahteva
+// request.open('GET', resource);
+// // 3. Šaljemo request
+// request.send();
