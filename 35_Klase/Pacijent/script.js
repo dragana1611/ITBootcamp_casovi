@@ -1,53 +1,9 @@
-class Pacijent {
-    constructor (ime, vis, tez){
-        this.ime = ime;
-        this.visina = vis;
-        this.tezina = tez;
-    }
-    stampaj(){
-        console.log(this.ime, this.visina, this.tezina);
-    }
-    Bmi(){
-       return this.tezina / (this.visina ** 2);
-    }
-    Kritican(){
-        let BMI = this.Bmi();
-        if(BMI<15 || BMI>40){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    set ime(i){
-        this._ime = i;
-    }
+import {Pacijent} from "./pacijent.js";
 
-    set visina (v){
-        this._visina = v;
-    }
-
-    set tezina (t){
-        this._tezina = t;
-    }
-
-    get ime(){
-        return this._ime;
-    }
-
-    get visina(){
-        return this._visina;
-    }
-
-    get tezina() {
-        return this._tezina;
-    }   
-}
-
-const pacijent1 = new Pacijent ('Pera Peric', 1.85, 80);
+const pacijent1 = new Pacijent('Pera Peric', 1.85, 80);
 pacijent1.stampaj();
 console.log(pacijent1.Bmi());
-console.log (pacijent1.Kritican());
+console.log(pacijent1.Kritican());
 
 const pacijent2 = new Pacijent('Mika Mikic', 2.05, 170);
 pacijent2.stampaj();
@@ -58,3 +14,32 @@ const pacijent3 = new Pacijent('Ana Anic', 1.65, 65);
 pacijent3.stampaj();
 console.log(pacijent3.Bmi());
 console.log(pacijent3.Kritican());
+
+// Kreirati niz od barem tri pacijenta.
+let pacijenti = [pacijent1, pacijent2, pacijent3];
+
+//Ispisati podatke o pacijentu sa najmanjom težinom.
+let minTez = pacijenti[0].tezina;
+for (let i=0; i<pacijenti.length; i++){
+    if(pacijenti[i].tezina< minTez){
+        minTez = pacijenti[i].tezina;
+    }
+}
+console.log(`Najmanja tezina pacijenta je: ${minTez}`);
+
+//Ispisati podatke o pacijentu sa najvećim bmi vrednošću
+
+let maxBMI = pacijenti[0].Bmi();
+for (let i = 0; i < pacijenti.length; i++){
+    if(pacijenti[i].Bmi() > maxBMI){
+        maxBMI = pacijenti[i].Bmi();
+    }
+}
+console.log(`Najveci BMI pacijenta je: ${maxBMI}`);
+
+// //Ispisati sve pacijente čije ime sadrži slovo A.
+// pacijenti.forEach(ime =>{
+//     if(ime.ime include = "A"){
+//         console.log(ime.ime);
+//     }
+// });

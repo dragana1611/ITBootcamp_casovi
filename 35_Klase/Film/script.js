@@ -19,7 +19,8 @@ class Film {
             this._godIzd = gizd;
         } 
         else {
-            alert('Error: Godina izdanja filma mora biti veća od 1800.');
+            //console.log('Error: Godina izdanja filma mora biti veća od 1800.');
+            this._godIzd = 1800;
         }
     }
     get naslov() {
