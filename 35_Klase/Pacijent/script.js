@@ -37,9 +37,3 @@ for (let i = 0; i < pacijenti.length; i++){
 }
 console.log(`Najveci BMI pacijenta je: ${maxBMI}`);
 
-// //Ispisati sve pacijente čije ime sadrži slovo A.
-// pacijenti.forEach(ime =>{
-//     if(ime.ime include = "A"){
-//         console.log(ime.ime);
-//     }
-// });
