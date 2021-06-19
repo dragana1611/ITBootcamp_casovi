@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+    color: #fff0f0;
+    text-shadow: 2px 2px 2px #344638;
+    background-color: cadetblue;
+    background-image: url('bckgrnd3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+a{
+    color: #344638;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px  #171f19;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #fff597;
+    color: #344638;
+    text-shadow: 0.5px 0.5px  #171f19;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #171f19;
+}
+
+.btn:hover{
+    background-color: #c5b416;
+    color: #45644b;
+    cursor: pointer;
+}
+
+form{
+    margin: 15px;
+}
+
+input{
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 3px #242e26;
+}
+
+input:focus, .btn:focus{
+    outline-width: 0;
+}
