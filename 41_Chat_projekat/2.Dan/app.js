@@ -1,5 +1,5 @@
-import {Chatroom} from './chats.js';
-import {ChatUI} from './ui.js';
+import { Chatroom } from './chats.js';
+import { ChatUI } from './ui.js';
 
 let chatroom1 = new Chatroom('general', 'Uros');
 let chatroom2 = new Chatroom('js', 'Ana');
@@ -60,13 +60,17 @@ chatroom5.getChats(data => {
 
 let formMessage = document.querySelector('#formMessage');
 let inputMessage = document.querySelector('#inputMessage');
-let btnSend = document.querySelector('#btnSend');
+//let btnSend = document.querySelector('#btnSend');
 
-formMessage.addEventListener('submit', elem =>{
+formMessage.addEventListener('submit', elem => {
     elem.preventDefault();
     let message = inputMessage.value;
-    chatroom5.addChat(message)
-    .then (()=> formMessage.reset())
-    .catch(err => console.log(err));
-    
-})
+    if (message != "" || message != null) {
+        chatroom5.addChat(message)
+            // .then(() => formMessage.reset())
+            // .catch(err => console.log(err));
+    }
+    else {
+        alert('Polje za poruku ne sme biti prazno');
+    }
+});

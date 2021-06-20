@@ -14,7 +14,16 @@ export class Chatroom {
     }
 
     set username(username) {
-        this._username = username;
+        if(username.length>=2 && username.length<=10){
+            this._username = username;
+        }
+        else{
+            alert('Pogresan unos');
+        }
+        if (username == "" || username == null) {
+           
+            alert('Pogresan unos');
+        }
     }
     get username() {
         return this._username

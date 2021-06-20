@@ -100,11 +100,9 @@ box-sizing: border-box;
 
 body{
     text-align: center;
-    color: #E6DCE0;
-    width: 100vw;
-    height: 1000px;
+    color: #E6DCE0;    
     text-shadow: 2px 2px 2px #171f19;
-    background-color: cadetblue;
+    background-color: #3f7468;
     background-image: url('bckgrnd3a.jpg');    
     background-repeat: no-repeat;
     background-size: cover;    
@@ -113,7 +111,7 @@ body{
 a{
     color: #344638;
     text-decoration: none;
-    text-shadow: 0.5px 0.5px  #171f19;
+    text-shadow: 1px 1px 1px #171f19;
 }
 
 .btn{
@@ -122,7 +120,7 @@ a{
     font-size: 18px;
     background-color: #E6DCE0;
     color: #344638;
-    text-shadow: 0.5px 0.5px  #171f19;
+    text-shadow: 1px 1px 1px #171f19;
     border: 0.5px solid #3f7468;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #171f19;
