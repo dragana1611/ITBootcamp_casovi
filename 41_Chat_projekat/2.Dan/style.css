@@ -107,6 +107,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;    
 }
+header{
+    margin-top: 40px ;
+    margin-bottom: 20px;
+    line-height: 2em;
+}
+h1, h2{margin-bottom: 20px;}
 
 a{
     color: #344638;
@@ -158,17 +164,18 @@ input.btn{
     height: 30px;
 }
 .msg{
-    /* height: 400px; */
+    
     width: 80%;
-    /* overflow: scroll; */
+   
 }
 ul{
     position: relative;
-    left:15%;margin-top: 20px;
+    left:15%;
+    margin-top: 20px;
 }
 li{
     list-style-type: none;
-    color:#1D2528;
+    color:#252f33;
     text-align: left;
     text-shadow:none;   
     font-size: 120%;
@@ -177,8 +184,23 @@ li{
     border: 1px solid #3f4e4c;
     border-radius: 15px;
     border-top-left-radius: 0;
-    width: 40%;
-    height: 60px;
+    width: 40%;    
     margin-bottom: 5px;
     padding: 5px;
+    padding-left: 20px;
+}
+.liUsername{
+    font-weight: bold;
+}
+.liDate{
+    color: rgb(99, 99, 99);
+}
+p{
+    color: #252f33;
+    background-color: #cefff7;
+    font-size: 150%;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 10px auto;
 }

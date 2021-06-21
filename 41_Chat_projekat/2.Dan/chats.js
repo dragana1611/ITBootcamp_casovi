@@ -14,14 +14,15 @@ export class Chatroom {
     }
 
     set username(username) {
-        if(username.length>=2 && username.length<=10){
-            this._username = username;
+        if (username.trim() != "" && username != /\s/) {
+            if (username.length >= 2 && username.length <= 10) {
+                this._username = username;
+            }
+            else {
+                alert('Pogresan unos');
+            }
         }
-        else{
-            alert('Pogresan unos');
-        }
-        if (username == "" || username == null) {
-           
+        else {
             alert('Pogresan unos');
         }
     }
@@ -51,7 +52,7 @@ export class Chatroom {
         let response = await this.chats.add(chat);
         return response;
     }
-    
+
     getChats(callback) {
         this.unsub = this.chats
             .where('room', '==', this.room)

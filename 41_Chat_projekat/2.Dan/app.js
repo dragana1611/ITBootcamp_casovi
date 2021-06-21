@@ -65,12 +65,32 @@ let inputMessage = document.querySelector('#inputMessage');
 formMessage.addEventListener('submit', elem => {
     elem.preventDefault();
     let message = inputMessage.value;
-    if (message != "" || message != null) {
+    if (message.trim() != "" && message != /\s/) {
         chatroom5.addChat(message)
-            // .then(() => formMessage.reset())
-            // .catch(err => console.log(err));
+            .then(() => formMessage.reset())
+            .catch(err => console.log(err));
     }
     else {
         alert('Polje za poruku ne sme biti prazno');
     }
 });
+
+let formUsername = document.querySelector('#formUsername');
+let inputUsername = document.querySelector('#inputUsername');
+let btnUsername = document.querySelector('#btnUpdate');
+
+formUsername.addEventListener('submit', elem => {
+    elem.preventDefault();
+    let user = inputUsername.value;
+    chatroom5.updateUsername(user);
+    formUsername.reset();
+});
+
+
+btnUsername.addEventListener('click', () => {
+    let body = document.body;
+    let pNewUser = document.createElement('p');
+    pNewUser.textContent = inputUsername.value;
+    body.appendChild(pNewUser);   
+});
+
