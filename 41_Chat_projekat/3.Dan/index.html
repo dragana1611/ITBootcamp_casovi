@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Projekat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    
+        <div class="row">
+            <header class = " col-t-12 col-12 ">
+                <h1>ITBootcamp Chat</h1>
+                <h2>Choose a chatroom</h2>
+            
+            </header>
+        </div>
+        <div class="row">
+            <nav class = " col-t-12 col-12 ">
+                <button id="general" class="btn selected"><a href="#">#general</a></button>
+                <button id="js" class="btn"><a href="#">#js</a></button>
+                <button id="homeworks" class="btn"><a href="#">#homeworks<div ></div></a></button>
+                <button id="tests" class="btn"><a href="#">#tests</a></button>
+            </nav>
+        </div>
+        <div class="row">
+            <section class = " col-t-12 col-12 msg ">
+                <ul>
+
+                </ul>
+            </section>
+        </div>
+        <div class="row">
+            <section class = " col-t-12 col-12 ">
+                <form action="" id = "formMessage">
+                    <input type ="text" placeholder ="Your message" id = "inputMessage">
+                    <input type ="submit" value="Send" id = "btnSend" class="btn">
+                </form>
+                <form action="" id = "formUsername">
+                    <input type ="text" placeholder="Update user name" id = "inputUsername">
+                    <input type ="submit" value ="Update" id = "btnUpdate" class = "btn">
+                </form>
+                <p id="alertUser"></p>
+            </section>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDI4lqUKh8ZIav-JWD6sHlgBxK9J2qBL2Y",
+        authDomain: "itbootcamp-vezba1.firebaseapp.com",
+        projectId: "itbootcamp-vezba1",
+        storageBucket: "itbootcamp-vezba1.appspot.com",
+        messagingSenderId: "357307384929",
+        appId: "1:357307384929:web:a5b9c1bb612a64b5351620"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    let db = firebase.firestore();
+</script>
+
+
+
+
+
+<!-- <script src="chats.js"></script> -->
+<script type="module" src="app.js"></script>
+</body>
+</html>
